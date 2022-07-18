@@ -1,4 +1,4 @@
-# spke-buttons
+# LEGO Mindstorms Spike Hub and the Hub Buttons
 
 A Python snippet utilizing the LEGO Spike buttons, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the ```is_pressed()``` and ```is_released()``` commands.
 
