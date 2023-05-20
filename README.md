@@ -1,8 +1,10 @@
 # LEGO Mindstorms Spike Hub and the Hub Buttons
 
-A Python snippet utilizing the LEGO Spike buttons, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the ```is_pressed()``` and ```is_released()``` commands.
+A Python snippet utilizing the LEGO Spike buttons, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the `is_pressed()` and `is_released()` commands.
 
-## Tutorial Requirements:
+***
+
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [MicroPython for LEGO Robot Inventor](https://www.lego.com/en-ca/themes/mindstorms/downloads)
