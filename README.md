@@ -2,6 +2,47 @@
 
 A Python snippet utilizing the LEGO Spike buttons, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and the `is_pressed()` and `is_released()` commands.
 
+## Sample Code
+
+```py
+from mindstorms import MSHub
+from mindstorms.control import wait_for_seconds
+
+hub = MSHub()
+
+while True:
+
+    if hub.left_button.is_pressed() and hub.right_button.is_pressed():
+
+        break
+
+    elif hub.left_button.is_pressed():
+
+        hub.speaker.start_beep(50)
+        hub.status_light.on('violet')
+        hub.light_matrix.show_image('ARROW_W')
+
+        hub.left_button.wait_until_released()
+
+    elif hub.right_button.is_pressed():
+
+        hub.speaker.start_beep(70)
+        hub.status_light.on('green') 
+        hub.light_matrix.show_image('ARROW_E')
+
+        hub.right_button.wait_until_released()
+
+    hub.speaker.stop()
+    hub.status_light.off()
+    hub.light_matrix.off()
+
+    wait_for_seconds(1)
+
+    hub.speaker.beep(90)
+
+hub.speaker.beep()
+```
+
 ***
 
 ## Repo Resources
